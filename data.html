@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浪大家看見愛 X 浪浪的流浪動物之家</title>
+
+    <!-- FAVIOCN -->
+    <link rel="shortcut icon" href="./img/dog.png" type="image/x-icon">
+
+    <!-- 網站META -->
+    <!-- 說明最好要設，讓Google搜尋能抓到網站說明 -->
+    <meta name="keywords" content="流浪動物,動物領養,動物收容中心,毛小孩,浪浪之家,貓狗認養">
+    <meta name="description" content="流浪動物之家">
+    <meta name="author" content="泰山PHP網頁設計班-學員04陳怡蓁">
+
+    <!-- FACEBOOK META -->
+    <meta property="og:title" content="浪大家看見愛 X 浪浪的流浪動物之家">
+    <meta property="og:image" content="./img/cute dog.jpeg">
+    <meta property="og:description" content="請以認養代替購買，給流浪動物一個溫暖的家。毛小孩的心聲:「愛我就不要棄養我。」">
+    <meta property="og:site_name" content="流浪動物之家">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/stray.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/dataTables.bootstrap4.min.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/dog.png" width="30" height="30" class="d-inline-block align-top" alt="回首頁" title="回首頁">
+                浪大家看見愛 X 浪浪的流浪動物之家
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./foster.html">
+                            <img src="./img/pet care2.png" alt="logo" style="width:30px; height: 30px;"> 動物認領養
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html">
+                            <img src="./img/goods.png" alt="logo" style="width:30px; height: 30px;"> 愛心義賣商品專區
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./data.html">
+                            <img src="./img/data.png" alt="logo" style="width:30px; height: 30px;"> 政府相關資料
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page">
+        <div class="container-fluid" id="loading">
+            <div class="row h-100">
+                <div class="col-12 text-center align-self-center">
+                    <img src="./img/foot.svg" alt="" width="300" height="300">
+                    <p class="text-dark">請稍待片刻...</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="content" style="margin-top: 70px; margin-bottom: 64px;">
+            <div class="row">
+                <div class="col-12 text-center text-white rubberBand wow my-2">
+                    <h1>景點介紹</h1>
+                </div>
+                <hr class="hr-white">
+                <div class="col-12">
+                    <table class="table table-hover table-light table-rwd my-2 rounded" id="showtable">
+                        <thead class="thead-dark rounded tr-hide">
+                            <tr>
+                                <th>名稱</th>
+                                <th>地點</th>
+                                <th>電話</th>
+                                
+                            </tr>
+                        </thead>
+                    </table>
+                        <!-- <tbody>
+                            <tr>
+                                <td data-th="名稱">東山咖啡館</td>
+                                <td data-th="地點">你家隔壁</td>
+                                <td data-th="電話">02-12345678</td>
+                                <td data-th="介紹">
+                                    <button type="button" class="btn btn-link btn-more" data-img="dongshan-cafe_02.jpg">
+                                        <i class="fas fa-eye"></i>  詳細資料
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="名稱">東山咖啡農場</td>
+                                <td data-th="地點">你家後面</td>
+                                <td data-th="電話">02-887654321</td>
+                                <td data-th="介紹"><button type="button" class="btn btn-link btn-more" data-img="dongshan-cafe_08.jpg"><i class="fas fa-eye"></i>  詳細資料</button></td>
+                            </tr>
+                            <tr>
+                                <td data-th="名稱">東山咖啡</td>
+                                <td data-th="地點">你家後面</td>
+                                <td data-th="電話">02-887654321</td>
+                                <td data-th="介紹"><button type="button" class="btn btn-link btn-more" data-img="dongshan-cafe_10.jpg"><i class="fas fa-eye"></i>  詳細資料</button></td>
+                            </tr>
+                            <tr>
+                                <td data-th="名稱">東山老家咖啡</td>
+                                <td data-th="地點">台南市東山區90號</td>
+                                <td data-th="電話">06-686-1230</td>
+                                <td data-th="介紹"><button type="button" class="btn btn-link btn-more" data-img="foods_07.jpg"><i class="fas fa-eye"></i>  詳細資料</button></td>
+                            </tr>
+                        </tbody>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" class="w-100 modal-img">
+                    <br><br>
+                    <h6><i class="fas fa-map-marker-alt text-success"></i>&nbsp;&nbsp;地址：<span class="modal-addr"></span></h6>
+                    <h6><i class="fas fa-phone-alt text-success"></i>&nbsp;電話：<span class="modal-tel"></span></h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- footer  -->
+     <div class="container-fluid bg-dark" id="footer">
+        <div class="row justify-content-center">
+            <div class="col-12 text-white text-center ">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-line"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            <div class=""><img src="./img/dog.png" alt="logo" style="width:35px; height: 35px;">社團法人高雄市浪浪的流浪動物之家</div>
+            <div clsss="address">總辦公室：81462 高雄市仁武區八德中路108巷2號</div>
+            <div class="tel">流浪犬貓相關事項詢問專線 : 07-374-8002、0983806582 </div>
+                &copy;<script>let d = new Date; document.write(d.getFullYear());</script>&nbsp Design : 泰山網頁設計班 &nbsp  學員-陳怡蓁
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).on("readystatechange", function(){
+            if(document.readyState == "complete"){
+                $("#loading").fadeOut(2000, function(){
+                    $("#content").fadeIn(1000);
+                    $("#footer").fadeIn(1000);
+
+                    new WOW().init();
+                });
+            }
+        })
+
+        //ajax 
+        
+        $.ajax({
+            url: "http://data.coa.gov.tw/Service/OpenData/TransService.aspx?UnitId=DyplMIk3U1hf",
+            type: "GET",
+            dataType: "json",
+            success: function(r){
+                for(let i=0;i<r.length;i++){
+                    console.log(r[i].);
+                      $("#showtable").append(/*html*/`
+                          <tr>
+                              <td> ${r[i].title} </td>
+                              <td> ${r[i].showInfo[0].time} </td>
+                              <td> ${r[i].showInfo[0].locationName} </td>
+                          </tr>
+                      `);
+                 }
+            }
+        })
+    
+
+        $("#site").DataTable({
+            "language": {
+                "url": "./datatables-chinese-traditional.json"
+            },
+            "columnDefs": [
+                {
+                    "targets": 3,
+                    "orderable": false,
+                    "searchable": false 
+                }
+            ]
+        });
+
+        $(".btn-more").on("click", function(){
+            let title = $(this).parents("tr").find("td").eq(0).text();
+            $("#modal .modal-title").text(title);
+
+            let addr = $(this).parents("tr").find("td").eq(1).text();
+            $("#modal .modal-addr").text(addr);
+
+            let tel = $(this).parents("tr").find("td").eq(2).text();
+            $("#modal .modal-tel").text(tel);
+            
+            let img = $(this).attr("data-img");
+            $("#modal .modal-img").attr("src", "./img/"+img);
+
+            $("#modal").modal("show");
+        })
+    </script>
+</body>
+
+</html>

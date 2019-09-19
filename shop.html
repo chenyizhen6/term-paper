@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浪大家看見愛 X 浪浪的流浪動物之家 | 愛心義賣商品專區</title>
+
+    <!-- FAVIOCN -->
+    <link rel="shortcut icon" href="./img/dog.png" type="image/x-icon">
+
+    <!-- 網站META -->
+    <!-- 說明最好要設，讓Google搜尋能抓到網站說明 -->
+    <meta name="keywords" content="流浪動物,動物領養,動物收容中心,毛小孩,浪浪之家,貓狗認領養">
+    <meta name="description" content="流浪動物之家">
+    <meta name="author" content="泰山PHP網頁設計班-學員04陳怡蓁">
+
+    <!-- FACEBOOK META -->
+    <meta property="og:title" content="浪大家看見愛 X 浪浪的流浪動物之家">
+    <meta property="og:image" content="./img/cute dog.jpeg">
+    <meta property="og:description" content="請以認養代替購買，給流浪動物一個溫暖的家。毛小孩的心聲:「愛我就不要棄養我。」">
+    <meta property="og:site_name" content="流浪動物之家">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/stray.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/dataTables.bootstrap4.min.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <!-- background - bubble -->
+    <div id="particles-js"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/dog.png" width="30" height="30" class="d-inline-block align-top" alt="回首頁" title="回首頁">
+                浪大家看見愛 X 浪浪的流浪動物之家>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./foster.html">
+                            <img src="./img/pet care2.png" alt="logo" style="width:30px; height: 30px;"> 動物認領養
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./shop.html">
+                            <img src="./img/goods.png" alt="logo" style="width:30px; height: 30px;"> 愛心商品義賣專區
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./img/data.png" alt="logo" style="width:30px; height: 30px;">動物保護相關資源
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="hov">
+                          <a class="dropdown-item" href="./area.php">
+                            <img src="./img/dog rail.png" alt="logo" style="width:18px; height:18px;">&nbsp全國公立動物收容所
+                          </a>
+                          <a class="dropdown-item" href="./data.php">
+                            <img src="./img/dog count.png" alt="logo" style="width:25px; height:25px;">&nbsp98~104年全國流浪犬數量統計
+                          </a>
+                          <a class="dropdown-item" href="./video.html">
+                            <img src="./img/video music.png" alt="logo" style="width:22px; height:22px;">&nbsp影音專區
+                          </a>
+                          <a class="dropdown-item" href="./connect.html">
+                            <img src="./img/035 connect icon.png" alt="logo" style="width:18px; height:18px;">&nbsp&nbsp好站連結
+                          </a>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page">
+        <div class="container-fluid" id="loading">
+            <div class="row h-100">
+                <div class="col-12 text-center align-self-center">
+                    <img src="./img/foot.svg" alt="" width="300" height="300">
+                    <p class="text-dark">請稍待片刻...</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container" id="content" style="margin-top: 70px; margin-bottom: 64px;">
+            <div class="row">
+                <div class="col-12 text-center text-light bg-info rubberBand wow my-2">
+                    <h1 class=" font-weight-bold">~浪浪の愛心義賣專區~</h1>
+                </div>
+                <hr class="hr-dark">
+            
+                <!-- 圖片輪播區 -->
+            <div id="carouselExampleControls" class="carousel slide tada wow" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/shop1.png" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/shop2.png" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/shop3.png" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/shop4.png" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/shop5.png" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/shop6.png" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/shop7.png" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/shop8.png" class="d-block w-100" alt="">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+               <hr class="hr-dark">
+            <!-- 第一行 -->
+            <div class="card-deck fadeInDown wow">
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-warning">
+                    <div class="card">
+                        <img src="./img/gooda.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">A.兩用帆布袋 - 貓貓款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 450</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-info ">
+                    <div class="card">
+                        <img src="./img/goodb.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">B.兩用帆布袋 - 狗和貓款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 450</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-success ">
+                    <div class="card">
+                        <img src="./img/goodc.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">C.便當帆布袋 - 貓貓款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 490</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-danger ">
+                    <div class="card">
+                        <img src="./img/goodd.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">D.便當帆布袋 - 狗狗款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 490</h5>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+             
+            <!-- 第二行 -->
+            <div class="card-deck fadeInDown wow">
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-warning mb-3">
+                    <div class="card">
+                        <img src="./img/goode.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">E.2019獨一無二米克斯桌上型月曆</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 350</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-info mb-3">
+                    <div class="card">
+                        <img src="./img/goodf.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">F.獨一無二米克斯悠遊卡貼</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 30</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-success mb-3">
+                    <div class="card">
+                        <img src="./img/goodg.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">G.2019獨一無二米克斯手帳</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 199</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-danger mb-3">
+                    <div class="card">
+                        <img src="./img/goodh.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">H.獨一無二米克斯門簾</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 690</h5>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- 第三行 -->
+            <div class="card-deck fadeInLeft wow">
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-warning mb-3">
+                    <div class="card">
+                        <img src="./img/goodi.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">I.獨一無二米克斯環保杯袋</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 260</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-info mb-3">
+                    <div class="card">
+                        <img src="./img/goodj.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">J.獨一無二米克斯兩用帆布袋</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 490</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-success mb-3">
+                    <div class="card">
+                        <img src="./img/goodk.png" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">K.浪浪野餐日野餐墊(粉紅)貓咪圖案</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 520</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-danger mb-3">
+                    <div class="card">
+                        <img src="./img/goodl.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">L.幸福狗造型書籤(有多款造型可選擇)</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 80</h5>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+
+            
+            <!-- 第四行 -->
+            <div class="card-deck fadeInRight wow">
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-warning mb-3">
+                    <div class="card">
+                        <img src="./img/goodm.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">M.雨傘 - 牛奶款(7/18上午十點開賣)</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 780</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-info mb-3">
+                    <div class="card">
+                        <img src="./img/goodn.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">N.雨傘 - 抹茶款(7/18上午十點開賣)</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 780</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-success mb-3">
+                    <div class="card">
+                        <img src="./img/goodo.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">O.雨傘 - 可可款(7/18上午十點開賣)</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 780</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-danger mb-3">
+                    <div class="card">
+                        <img src="./img/goodp.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">P.幸福狗插畫馬克杯</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 300</h5>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- 第五行 -->
+             <div class="card-deck fadeInUp wow">
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-warning mb-3">
+                    <div class="card">
+                        <img src="./img/goodq.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Q.金屬徽章 - 黑夜白晝款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 350</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-info mb-3">
+                    <div class="card">
+                        <img src="./img/goodr.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">R.金屬徽章 - 銀色世界款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 350</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-success mb-3">
+                    <div class="card">
+                        <img src="./img/good-s.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">S.幸福狗中秋月餅公益伴手禮盒</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 1000</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-danger mb-3">
+                    <div class="card">
+                        <img src="./img/goodt.png" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">T.//限量周邊//UNDER PEACE X 浪浪別哭 T-shirt</h5>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 690</h5>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- 第六行 -->
+            <div class="card-deck fadeInUp wow">
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-warning mb-3">
+                    <div class="card">
+                        <img src="./img/goodu.png" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">U.這裡讓愛不流浪：中途咖啡店「浪浪別哭」的暖心故事</h5>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 350</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-info mb-3">
+                    <div class="card">
+                        <img src="./img/goodv.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">V.狗狗滑鼠墊 - Be yourself</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 200</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-success mb-3">
+                    <div class="card">
+                        <img src="./img/goodw.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">W.貓咪杯墊 - 雜花款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 200</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3 card border-danger mb-3">
+                    <div class="card">
+                        <img src="./img/goodx.jpg" class="card-img-top obj-fit" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">X.狗狗杯墊 - 玩耍款</h4>
+                        </div>
+                            <div class="card-footer">
+                                <h5 class="card-text font-weight-bold text-primary">NT 200</h5>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+          
+            <!-- 第七行 -->
+            <div class="card-deck fadeInLeft wow">
+                    <div class="col-8 col-md-6 col-lg-3 my-3 card border-warning mb-3">
+                        <div class="card">
+                            <img src="./img/goody.jpg" class="card-img-top obj-fit" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-bold">Y.明信片 - 狗狗款</h4>
+                            </div>
+                                <div class="card-footer">
+                                    <h5 class="card-text font-weight-bold text-primary">NT 40</h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 my-3 card border-info mb-3">
+                        <div class="card">
+                            <img src="./img/goodz.jpg" class="card-img-top obj-fit" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-bold">Z.明信片 - 貓貓款</h4>
+                            </div>
+                                <div class="card-footer">
+                                    <h5 class="card-text font-weight-bold text-primary">NT 40</h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 ">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                    </div>
+                </div> 
+              
+        
+          
+          
+                <div class="col-12 text-center text-dark flash wow my-2">
+                    <h1 class=" font-weight-bold">~商品訂購~</h1>
+                </div>
+                <hr class="hr-dark">
+                <div class="col-12 text-warning font-weight-bold">
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="order-email">★電子信箱</label>
+                            <input type="email" name="email" class="form-control" id="order-email" placeholder="請輸入您的電子信箱" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-addr">★地址</label>
+                            <input type="text" name="addr" class="form-control" id="order-addr" placeholder="請輸入您的地址" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-name">★姓名</label>
+                            <input type="text" name="name" class="form-control" id="order-name" placeholder="請輸入您的姓名" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" name="accept" class="form-check-input" id="order-ok" required>
+                            <label class="form-check-label" for="order-ok">我同意運送規定</label>
+                        </div>
+                        <p class="text-center">
+                            <button type="submit" class="btn btn-danger font-weight-bold">點我訂購</button>
+                        </p>
+                    </form>
+                </div>
+            
+        <!-- 插入music -->
+        <embed src="music/life-s-adventures.mp3" width="0" height="0"></embed>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark" id="footer">
+        <div class="row justify-content-center">
+            <div class="col-12 text-white text-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-facebook-f" id="ia1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-line" id="ia2"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-youtube" id="ia3"></i></a>
+                    </li>
+                </ul>
+            <div class=""><img src="./img/dog.png" alt="logo" style="width:35px; height: 35px;">社團法人高雄市浪浪的流浪動物之家</div>
+            <div clsss="address">總辦公室：81462 高雄市仁武區八德中路108巷2號</div>
+            <div class="tel">流浪犬貓相關事項詢問專線 : 07-374-8002、0983806582 </div>
+                &copy;<script>let d = new Date; document.write(d.getFullYear());</script>&nbsp Design : 泰山網頁設計班 &nbsp  學員-陳怡蓁
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+
+    <!-- background - bubble -->
+    <script src="./js/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', './js/particlesjs-config(8).json', function() {
+            });
+        </script>
+    <script>
+
+        
+        $(document).on("readystatechange", function () {
+            if (document.readyState == "complete") {
+                $("#loading").fadeOut(2000, function () {
+                    $("#content").fadeIn(1000);
+                    $("#footer").fadeIn(1000);
+
+                    new WOW().init();
+                });
+            }
+        })
+
+        $("#order-form").validate({
+            // 驗證規則
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                },
+                addr: {
+                    required: true,
+                    minlength: 5
+                },
+                name: {
+                    required: true,
+                    remote: function(element){
+                        return {
+                            url: "check.php",
+                            type: "POST",
+                            data: {
+                                name: $(element).val()
+                            }
+                        }
+                    }
+                },
+                accept:{
+                    required: true
+                }
+            },
+            // 錯誤訊息
+            messages: {
+                email: {
+                    required: "這是必填欄位",
+                    email: "請輸入有效的電子信箱"
+                },
+                addr: {
+                    required: "這是必填欄位",
+                    minlength: "請至少輸入五個字"
+                },
+                name: {
+                    required: "這是必填欄位",
+                    remote: "無效的名字"
+                },
+                accept:{
+                    required: "請同意規定"
+                }
+            },
+            // 驗證錯誤時，element為input
+            highlight:function(element){
+                $(element).removeClass("is-valid").addClass("is-invalid");
+            },
+            // 驗證錯通過時，element為錯誤訊息 (lable.error)
+            success: function(element){
+                $(element).siblings("input").removeClass("is-invalid").addClass("is-valid");
+                $(element).remove();
+            },
+            // 錯誤訊息位置，error為 label.error，element為input
+            errorPlacement: function(error, element){
+                error.insertAfter(element).addClass("text-danger");
+            },
+            // 送出表單時把送出擋下，form代表form標籤
+            submitHandler: function(form){
+                Swal.fire({
+                    type: "question",
+                    title: "您確定嗎",
+                    text: "請確認是否下單",
+                    // 顯示取消按鈕
+                    showCancelButton: true,
+                    // 不使用預設樣式
+                    buttonsStyling: false,
+                    // 自訂class
+                    customClass:{
+                        confirmButton: "btn btn-success mx-1",
+                        cancelButton: "btn btn-danger mx-1"
+                    },
+                    confirmButtonText: `<i class="far fa-thumbs-up"></i> 確認`,
+                    cancelButtonText: `<i class="fas fa-times"></i> 取消`,
+                }).then(function(result){
+                    // 點了確認按鈕
+                    if(result.value){
+                        let fd = new FormData(form);
+                        $.ajax({
+                            url: "form.php",
+                            type: "POST",
+                            data: fd,
+                            processData: false,
+                            contentType: false,
+                            cache: false,
+                            success: function(r){
+                                Swal.fire({
+                                    type: "success",
+                                    title: "成功",
+                                    text: "成功下訂",
+                                    // 不使用預設樣式
+                                    buttonsStyling: false,
+                                    // 自訂class
+                                    customClass:{
+                                        confirmButton: "btn btn-success mx-1",
+                                    },
+                                    confirmButtonText: `確定`,
+                                });
+                            }
+                        })
+                    }
+                    // 取消
+                    else{
+                        Swal.fire({
+                            type: "error",
+                            title: "取消",
+                            text: "取消下訂",
+                            // 不使用預設樣式
+                            buttonsStyling: false,
+                            // 自訂class
+                            customClass:{
+                                confirmButton: "btn btn-success mx-1",
+                            },
+                            confirmButtonText: `確定`,
+                        });
+                    }
+                });
+                
+            }
+        });
+    </script>
+</body>
+
+</html>

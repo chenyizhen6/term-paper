@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浪大家看見愛 X 浪浪的流浪動物之家 | 動物認領養</title>
+
+    <!-- FAVIOCN -->
+    <link rel="shortcut icon" href="./img/dog.png" type="image/x-icon">
+
+    <!-- 網站META -->
+    <!-- 說明最好要設，讓Google搜尋能抓到網站說明 -->
+    <meta name="keywords" content="流浪動物,動物領養,動物收容中心,毛小孩,浪浪之家,貓狗認領養">
+    <meta name="description" content="流浪動物之家">
+    <meta name="author" content="泰山PHP網頁設計班-學員04陳怡蓁">
+
+    <!-- FACEBOOK META -->
+    <meta property="og:title" content="浪大家看見愛 X 浪浪的流浪動物之家">
+    <meta property="og:image" content="./img/cute dog.jpeg">
+    <meta property="og:description" content="請以認養代替購買，給流浪動物一個溫暖的家。毛小孩的心聲:「愛我就不要棄養我。」">
+    <meta property="og:site_name" content="流浪動物之家">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/stray.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/dataTables.bootstrap4.min.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <!-- background - bubble -->
+    <div id="particles-js"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/dog.png" width="30" height="30" class="d-inline-block align-top" alt="回首頁" title="回首頁">
+                浪大家看見愛 X 浪浪的流浪動物之家>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./foster.html">
+                            <img src="./img/pet care2.png" alt="logo" style="width:30px; height: 30px;"> 動物認領養
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html">
+                            <img src="./img/goods.png" alt="logo" style="width:30px; height: 30px;"> 愛心商品義賣專區
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./img/data.png" alt="logo" style="width:30px; height: 30px;">動物保護相關資源
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="hov">
+                          <a class="dropdown-item" href="./area.php">
+                            <img src="./img/dog rail.png" alt="logo" style="width:18px; height:18px;">&nbsp全國公立動物收容所
+                          </a>
+                          <a class="dropdown-item" href="./data.php">
+                            <img src="./img/dog count.png" alt="logo" style="width:25px; height:25px;">&nbsp98~104年全國流浪犬數量統計
+                          </a>
+                          <a class="dropdown-item" href="./video.html">
+                            <img src="./img/video music.png" alt="logo" style="width:22px; height:22px;">&nbsp影音專區
+                          </a>
+                          <a class="dropdown-item" href="./connect.html">
+                            <img src="./img/035 connect icon.png" alt="logo" style="width:18px; height:18px;">&nbsp&nbsp好站連結
+                          </a>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page">
+        <div class="container-fluid" id="loading">
+            <div class="row h-100">
+                <div class="col-12 text-center align-self-center">
+                    <img src="./img/foot.svg" alt="" width="300" height="300">
+                    <p class="text-dark">請稍待片刻...</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="content" style="margin-top: 70px; margin-bottom: 64px;">
+            <div class="row">
+                <div class="col-12 text-center text-light swing wow my-2">
+                    <h1 class=" font-weight-bold" id="bgca">~浪浪の認領養專區~</h1>
+                </div>
+                <hr class="hr-dark bounceInUp wow">
+                
+            <!-- 圖片 -->
+                <div id="carouselExampleControls" class="carousel slide bounceInUp wow" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <img src="./img/fosterimages.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                    <hr class="hr-dark bounceInUp wow">
+                    <br>
+                    <br>
+                        <p class="introd">&nbsp&nbsp&nbsp&nbsp認養毛小孩以前，最好先「 停 ‧ 看 ‧ 聽 」，了解自己的生活步調與條件，詢問並尊重同住親友的意見，再決定家裡是否適合迎接新成員喔~~
+                        </p>
+            </div>
+            <br>
+                <img src="./img/dog line.png" class="img-fluid fadeInRight wow" alt="Responsive image">
+                
+                    
+        <!-- 看板區 -->
+          <!-- 第一行 -->
+        <div class="card-deck">
+            <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                <div class="card fadeInUp wow">
+                    <div class="card-header bg-warning text-white text-center font-weight-bold"><h4>編號001</h4>
+                    </div>
+                        <img src="./img/pubby-dog1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <ul >
+                                <li><h5 class="card-title font-weight-bold">品種: 混種狗</h5>
+                                </li>
+                                <p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                </li>
+                                </p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">性別:母
+                                </li>
+                            </ul>
+                            <button type="button" id="B1" class="btn btn-more btn btn-outline-warning" data-img="pubby-dog1(big).jpg">
+                                <i class="fas fa-dog"></i>  看更多...
+                            </button>
+                        </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                <div class="card fadeInUp wow">
+                    <div class="card-header bg-warning text-white text-center font-weight-bold"><h4>編號002</h4>
+                    </div>
+                        <img src="./img/pubby-cat2.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <ul>
+                                <li><h5 class="card-title font-weight-bold">品種: 混種貓</h5>
+                                </li>
+                                <p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">類別:貓
+                                </li>
+                                </p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">性別:公
+                                </li>
+                            </ul>
+                            <button type="button" id="B2" class="btn btn-more btn btn-outline-warning" data-img="pubby-cat2(big).jpg">
+                                <i class="fas fa-cat"></i>  看更多...
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                <div class="card fadeInUp wow">
+                    <div class="card-header bg-warning text-white text-center font-weight-bold"><h4>編號003</h4>
+                    </div>
+                        <img src="./img/pubby-dog3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <ul>
+                                <li><h5 class="card-title font-weight-bold">品種: 混種狗</h5>
+                                </li>
+                                <p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                </li>
+                                </p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">性別:公
+                                </li>
+                            </ul>
+                            <button type="button" id="B3" class="btn btn-more btn btn-outline-warning" id="B3"data-img="pubby-dog3(big).jpg">
+                                <i class="fas fa-dog"></i>  看更多...
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                <div class="card fadeInUp wow">
+                    <div class="card-header bg-warning text-white text-center font-weight-bold"><h4>編號004</h4>
+                    </div>
+                        <img src="./img/pubby-cat4.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <ul>
+                                <li><h5 class="card-title font-weight-bold">品種: 混種貓</h5>
+                                </li>
+                                <p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">類別:貓
+                                </li>
+                                </p>
+                                <li class="card-text font-weight-bold" style="font-size:18px;">性別:母
+                                </li>
+                            </ul>
+                            <button type="button" id="B4" class="btn btn-more btn btn-outline-warning" id="B4" data-img="pubby-cat4(big).jpg">
+                                <i class="fas fa-cat"></i>  看更多...
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- 第二行 -->
+        <div class="card-deck">
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-dark text-white text-center font-weight-bold"><h4>編號005</h4>
+                        </div>
+                            <img src="./img/pubby-dog5.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 雪納瑞</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:公
+                                    </li>
+                                </ul>
+                                <button type="button" id="B5" class="btn btn-more btn btn-outline-dark" data-img="pubby-dog5(big).jpg">
+                                    <i class="fas fa-dog"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-dark text-white text-center font-weight-bold"><h4>編號006</h4>
+                        </div>
+                            <img src="./img/pubby-dog6.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 法國鬥牛犬</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:公
+                                    </li>
+                                </ul>
+                                <button type="button"  id="B6" class="btn btn-more btn btn-outline-dark" data-img="pubby-dog6(big).jpg">
+                                    <i class="fas fa-dog"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-danger text-white text-center font-weight-bold"><h4>編號007</h4>
+                        </div>
+                            <img src="./img/puppy-dog7.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 混種狗</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:母
+                                    </li>
+                                </ul>
+                                <button type="button" id="B7" class="btn btn-more btn btn-outline-danger" data-img="puppy-dog7(big).jpg">
+                                    <i class="fas fa-dog"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-danger text-white text-center font-weight-bold"><h4>編號008</h4>
+                        </div>
+                            <img src="./img/pubby-dog8.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 混種狗</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:母
+                                    </li>
+                                </ul>
+                                <button type="button" id="B8" class="btn btn-more btn btn-outline-danger" data-img="pubby-dog8(big).jpg">
+                                    <i class="fas fa-dog"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+
+          <!-- 第三行 -->
+        <div class="card-deck">
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-info text-white text-center font-weight-bold"><h4>編號009</h4>
+                        </div>
+                            <img src="./img/pubby-cat9.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 混種貓</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:貓
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:未知
+                                    </li>
+                                </ul>
+                                <button type="button" id="B9" class="btn btn-more btn btn-outline-info" data-img="pubby-cat9(big).jpg">
+                                    <i class="fas fa-cat"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-info text-white text-center font-weight-bold"><h4>編號010</h4>
+                        </div>
+                            <img src="./img/pubby-dog10.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 臘腸</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:母
+                                    </li>
+                                </ul>
+                                <button type="button" id="B10" class="btn btn-more btn btn-outline-info" data-img="pubby-dog10(big).jpg">
+                                    <i class="fas fa-dog"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-info text-white text-center font-weight-bold"><h4>編號011</h4>
+                        </div>
+                            <img src="./img/pubby-dog11.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 混種狗</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:犬
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:公
+                                    </li>
+                                </ul>
+                                <button type="button" id="B11" class="btn btn-more btn btn-outline-info" data-img="pubby-dog11(big).jpg">
+                                    <i class="fas fa-dog"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 my-3  border-warning">
+                    <div class="card fadeInUp wow">
+                        <div class="card-header bg-info text-white text-center font-weight-bold"><h4>編號012</h4>
+                        </div>
+                            <img src="./img/pubby-cat12.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <ul>
+                                    <li><h5 class="card-title font-weight-bold">品種: 混種貓</h5>
+                                    </li>
+                                    <p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">類別:貓
+                                    </li>
+                                    </p>
+                                    <li class="card-text font-weight-bold" style="font-size:18px;">性別:公
+                                    </li>
+                                </ul>
+                                <button type="button" id="B12" class="btn btn-more btn btn-outline-info" data-img="pubby-cat12(big).jpg">
+                                    <i class="fas fa-cat"></i>  看更多...
+                                </button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    
+    
+
+        <!-- 隱藏資料 -->
+        <div class="col-12">
+        <table id="site" style="display:none;">
+            <thead class="thead-dark rounded tr-hide">
+            <tr>
+                <th>入所日期</th>
+                <th>公告收容所</th>
+                <th>收容所地址</th>
+                <th>收容所電話</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="aa1">
+                <!-- 001 -->
+                <td>2019/07/19</td>
+                <td>高雄市燕巢動物保護關愛園區</td>
+                <td>高雄市燕巢區師大路100號</td>
+                <td>07-6051002</td>
+                <td>適合認養</td>
+            </tr>
+            <tr id="aa2">
+                 <!-- 002 -->
+                <td>2019/07/19</td>
+                <td>新北市新店區公立動物之家</td>
+                <td>新北市新店區安泰路235號</td>
+                <td>02-22159462</td>
+                <td>適合認養</td>
+            </tr>
+            <tr id="aa3"> 
+                 <!-- 003 -->
+                <td>2019/07/19</td>
+                <td>高雄市燕巢動物保護關愛園區</td>
+                <td>高雄市燕巢區師大路100號</td>
+                <td>07-6051002</td>
+                <td>適合認養</td>
+            </tr>
+            <tr id="aa4">
+                 <!-- 004 -->
+                <td>2019/07/19</td>
+                <td>新竹市動物收容所</td>
+                <td>新竹市南寮里海濱路250號</td>
+                <td>03-5368329</td>
+                <td>適合認養</td>
+            </tr>
+            <tr id="aa5">
+                 <!-- 005 -->
+                <td>2019/07/19</td>
+                <td>高雄市壽山動物保護教育園區</td>
+                <td>高雄市鼓山區萬壽路350號</td>
+                <td>07-5519059</td>
+                <td>尋找飼主，不開放認養</td>
+            </tr>
+            <tr id="aa6">
+                 <!-- 006 -->
+                <td>2019/07/18</td>
+                <td>新竹市動物收容所</td>
+                <td>新竹市南寮里海濱路250號</td>
+                <td>03-5368329</td>
+                <td>已有人認養</td>
+            </tr>
+            <tr id="aa7">
+                 <!-- 007 -->
+                <td>2019/07/18</td>
+                <td>花蓮縣流浪犬中途之家</td>
+                <td>花蓮縣吉安鄉南濱路1段599號</td>
+                <td>038-421452</td>
+                <td>適合認養</td>
+            </tr>
+            <tr id="aa8">
+                 <!-- 008 -->
+                <td>2019/07/18</td>
+                <td>花蓮縣流浪犬中途之家</td>
+                <td>花蓮縣吉安鄉南濱路1段599號</td>
+                <td>038-421452</td>
+                <td>適合認養</td>
+                
+            </tr>
+            <tr id="aa9">
+                 <!-- 009 -->
+                <td>2019/07/18</td>
+                <td>新竹市動物收容所</td>
+                <td>新竹市南寮里海濱路250號</td>
+                <td>03-5368329</td>
+                <td>適合認養</td>
+            </tr>
+            <tr id="aa10">
+                 <!-- 010 -->
+                <td>2019/07/18</td>
+                <td>新北市五股區公立動物之家</td>
+                <td>新北市五股區外寮路9之9號</td>
+                <td>02-82925265</td>
+                <td>未確定是否絕育，適合認養</td>
+            </tr>
+            <tr id="aa11">
+                 <!-- 010 -->
+                <td>2019/07/18</td>
+                <td>新北市八里區公立動物之家</td>
+                <td>新北市八里區長坑村6鄰長坑道路36號</td>
+                <td>02-26194428</td>
+                <td>適合認養</td>
+            </tr>
+            <tr id="aa12">
+                 <!-- 010 -->
+                <td>2019/07/18</td>
+                <td>高雄市壽山動物保護教育園區</td>
+                <td>高雄市鼓山區萬壽路350號</td>
+                <td>07-5519059</td>
+                <td>適合認養</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        <br>
+        <br>
+            <img src="./img/dog line.png" class="img-fluid fadeInLeft wow" alt="Responsive image">
+        <br>
+        <br>
+        <!-- 圖片區 -->
+            <div id="carouselExampleControls" class="carousel slide bounceInLeft wow" data-ride="carousel">
+                <div class="carousel-inner">
+                    <img src="./img/adopt-process.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+             
+        <!-- 插入music -->
+        <embed src="music/gei-tuo-ge-jia-guan-fang-wan-zheng-ban.mp3" width="0" height="0"></embed>
+                                
+            </div>
+        </div>
+    </div>
+   
+    <!-- footer  -->
+    <div class="container-fluid bg-dark" id="footer">
+        <div class="row justify-content-center">
+            <div class="col-12 text-white text-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-facebook-f" id="ia1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-line" id="ia2"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-youtube" id="ia3"></i></a>
+                    </li>
+                </ul>
+            <div class=""><img src="./img/dog.png" alt="logo" style="width:35px; height: 35px;">社團法人高雄市浪浪的流浪動物之家</div>
+            <div clsss="address">總辦公室：81462 高雄市仁武區八德中路108巷2號</div>
+            <div class="tel">流浪犬貓相關事項詢問專線 : 07-374-8002、0983806582 </div>
+                &copy;<script>let d = new Date; document.write(d.getFullYear());</script>&nbsp Design : 泰山網頁設計班 &nbsp  學員-陳怡蓁
+            </div>
+        </div>
+    </div>
+
+<!-- 點 按鈕button 會顯示詳細資料(bootstrap套件) -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="" class="w-100 modal-img">
+                <br><br>
+                <h6><i class="far fa-calendar-alt text-danger"></i>&nbsp;&nbsp;入所日期：<span class="modal-date"></span></h6>
+                <h6><i class="fas fa-home text-danger"></i>&nbsp;公告收容所：<span class="modal-house"></span></h6>
+                <h6><i class="fas fa-map-marker-alt text-danger"></i>&nbsp;&nbsp;收容所地址：<span class="modal-addr"></span></h6>
+                <h6><i class="fas fa-phone-alt text-danger"></i>&nbsp;收容所電話：<span class="modal-tel"></span></h6>
+                <h6><i class="fas fa-bullhorn text-danger"></i> 描述：<span class="modal-desc"></span></h6>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- background - bubble -->
+    <script src="./js/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', './js/particlesjs-config(circle).json', function() {
+            });
+        </script>
+
+   <script>
+        $(document).on("readystatechange", function () {
+            if (document.readyState == "complete") {
+                $("#loading").fadeOut(2000, function () {
+                    $("#content").fadeIn(1000);
+                    $("#footer").fadeIn(1000);
+
+                    new WOW().init();
+                });
+            }
+        })
+
+        
+        
+    // 點擊按鈕會出現詳細資料
+        
+        $(".btn-more").on("click", function(){
+        //  作法1
+               //  001 
+        //     var aa = $("#aa1 td").eq(0).text();
+        //     // console.log(aa);
+        //     $("#modal .modal-date").text(aa);
+           
+        //     var ab = $("#aa1 td").eq(1).text();
+        //     $("#modal .modal-house").text(ab);
+        //     console.log(ab);
+        //     var ac = $("#aa1 td").eq(2).text();
+        //     $("#modal .modal-addr").text(ac);
+            
+        //     var ad = $("#aa1 td").eq(3).text();
+        //     $("#modal .modal-tel").text(ad); 
+
+           
+
+        //     //  002
+        //     var ba = $("#aa2 td").eq(0).text();
+        //     console.log(ba);
+        //     $("#moda .modal-date").text(ba);
+           
+        //     var bb = $("#aa2 td").eq(1).text();
+        //     $("#modal .modal-house").text(bb);
+
+        //     var bc = $("#aa2 td").eq(2).text();
+        //     $("#modal .modal-addr").text(bc);
+            
+        //     var bd = $("#aa2 td").eq(3).text();
+        //     $("#modal .modal-tel").text(bd); 
+
+            
+
+        //     //  003
+        //     var ca = $("#aa3 td").eq(0).text();
+           
+        //     $("#moda .modal-date").text(ca);
+           
+        //     var cb = $("#aa3 td").eq(1).text();
+        //     $("#modal .modal-house").text(cb);
+
+        //     var cc = $("#aa3 td").eq(2).text();
+        //     $("#modal .modal-addr").text(cc);
+            
+        //     var cd = $("#aa3 td").eq(3).text();
+        //     $("#modal .modal-tel").text(cd); 
+
+        
+        // 作法2
+          // 編號: 001 ~ 009
+            var AAA=($(this).attr("id")).substr(1,1);
+            var AAto="#aa"+AAA+" td";
+            
+             // 括號內沒東西代表取值
+            var aa = $(AAto).eq(0).text();
+            // 括號內有東西代表設定值
+            $("#modal .modal-date").text(aa);
+           
+            var ab = $(AAto).eq(1).text();
+            $("#modal .modal-house").text(ab);
+
+            var ac = $(AAto).eq(2).text();
+            $("#modal .modal-addr").text(ac);
+            
+            var ad = $(AAto).eq(3).text();
+            $("#modal .modal-tel").text(ad);
+
+            var ae = $(AAto).eq(4).text();
+            $("#modal .modal-desc").text(ae);
+
+          // 編號: 010 ~ 012
+            var BBB=($(this).attr("id")).substr(1,2);
+            var BBto="#aa"+BBB+" td";
+            // console.log(BBto);
+
+            var ba = $(BBto).eq(0).text();
+            $("#modal .modal-date").text(ba);
+            // console.log(ba);
+
+            var bb = $(BBto).eq(1).text();
+            $("#modal .modal-house").text(bb);
+
+            var bc = $(BBto).eq(2).text();
+            $("#modal .modal-addr").text(bc);
+
+            var bd = $(BBto).eq(3).text();
+            $("#modal .modal-tel").text(bd);
+
+            var be = $(BBto).eq(4).text();
+            $("#modal .modal-desc").text(be);
+
+            // img
+            let img = $(this).attr("data-img");
+            $("#modal .modal-img").attr("src", "./img/"+img);
+
+           
+            $("#modal").modal("show");
+        
+        });
+       
+        
+         
+    </script>
+</body>
+
+</html>

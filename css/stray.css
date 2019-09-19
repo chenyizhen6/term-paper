@@ -1,0 +1,228 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", "Microsoft JHengHei";
+}
+
+/* 自己設定導覽列的height  */
+/* rem:以根元素為基準，而根元素就是指標籤。適合用在整體網頁的尺寸切換，可以依據不同的螢幕尺寸，統一改變網頁全部的文字大小。
+       而要注意的是，rem不支援IE8之前的瀏覽器！ */
+.bg-success {
+    min-height: 4.5rem;
+}
+
+/* 自己設定background:star、snow */
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1000;
+    top: 0;
+    left: 0;
+}
+
+.bla1 {
+    color: rgb(107, 80, 64);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+#bgca {
+    background-color: rgb(255, 219, 101);
+}
+
+#bgcb {
+    background-color: rgb(255, 101, 101);
+}
+
+#don {
+    background-color:  rgb(72, 218, 128);
+}
+
+#exn {
+    background-color:  rgb(165, 49, 211);
+}
+
+/* 導覽列的hover */
+#hov :hover {
+    background-color:#e91e63;
+}
+
+/* foot icon */
+i{
+    font-size: 18px;
+}
+
+#ia1:hover {
+    color: rgb(0, 47, 255);
+    font-size: 25px;
+}
+
+#ia2:hover {
+    color: rgb(0, 255, 21);
+    font-size: 25px;
+}
+
+#ia3:hover {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+}
+
+.introd {
+    font-size: 18px;
+    color: rgb(121, 95, 54); 
+    font-weight: bolder;
+}
+
+#accept {
+    font-size: 25px;
+}
+
+/* 分隔線樣式 - 雙線 */
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+/* 設定滑鼠移到圖片上，圖片會放大的效果 */
+/* 外面的框設定overflow:hidden是為了隱藏在圖片放大時超出的部分 */
+#post :hover {
+    overflow: hidden;
+}
+
+#post img {
+    /* transition:all 0.5s ease 0s 為圖片放大所需的時間和特效 */
+    transition: all 0.5s ease 0s;
+}
+
+#post img:hover {
+    /* transform: scale 圖片放大的倍率 */
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    /* 不透明度 */
+    opacity: .8;
+}
+
+
+#intro {
+    float:right;
+    font-size: 21px;
+    color: #c0a81d;
+}
+
+
+/* video */
+#vi1{
+    color: rgb(107, 80, 64);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+small {
+    font-size: 16px;
+}
+
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.obj-fit {
+    object-fit: cover;
+    object-position: center;
+}
+
+.hr-dark{
+    width: 100%;
+    background: rgb(7, 3, 34);
+}
+
+.indeximg {
+    height: 700px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+
+.subtitle {
+    background-color:  rgba(0, 0, 0, 0.623);
+    margin-top: 50px;
+    position: absolute;
+    width: 55% ; 
+    height:40px; 
+    color: aliceblue; 
+    font-size: 23px;
+    text-align: center;
+}    
+
+@media (max-width:768px){
+    .indeximg{
+        order: 1;
+    }
+    .indextext{
+        order: 2;
+    }
+
+    .table-rwd .tr-hide{
+        display: none;
+    }
+
+    .table-rwd td:not(.dataTables_empty):before {
+        content: attr(data-th) ": ";
+        color: red;
+        font-weight: bold;
+    }
+
+    .table-rwd td{
+        display: block;
+        border: 0;
+    }
+
+    .table-rwd tr{
+        border: 1px solid black;
+        display: block;
+    }
+}
+
+#loading {
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1029;
+    position:fixed;
+    left: 0;
+    right: 0;
+    
+}
+
+#content, #footer{
+    display: none;
+}
+
+.dataTables_wrapper label{
+    color: rgb(255, 107, 107);
+    
+
+}
+
+#page {
+    /* 100vh - nav - footer height - #page margin bottom - nav和page的間距 */
+    min-height: calc(100vh - 56px - 64px - 64px - (70px - 56px));
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.card-body {
+    height: 150px;
+    overflow-y: auto;
+}
